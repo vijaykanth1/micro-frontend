@@ -1,8 +1,9 @@
 import React, { Suspense } from "react";
 const Navbar = React.lazy(() => import("app1/Navbar"));
+const ChartBar = React.lazy(() => import("app1/ChartBar"));
 const CardList = React.lazy(() => import("app1/CardList"));
 const Footer = React.lazy(() => import("app2/Footer"));
-
+import "./styles.css"
 const list = [
   {
     "id":1,
@@ -34,8 +35,9 @@ const App = () => {
   return (
     <div>
       <Suspense fallback={"loading..."}>
-        <Navbar organizationName="Media Unit" />
-        <CardList list={list}/>
+        <Navbar organizationName="Dashboard" />
+        <ChartBar/>
+        <CardList/>
         <Footer/>
       </Suspense>
     </div>)

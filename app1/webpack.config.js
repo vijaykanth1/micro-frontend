@@ -35,6 +35,7 @@ module.exports = {
         './Alert': './src/Components/Alert',
         './Navbar': './src/Components/Navbar',
         './CardList': './src/Components/CardList',
+        './ChartBar': './src/Components/ChartBar',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),

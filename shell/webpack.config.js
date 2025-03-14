@@ -23,6 +23,10 @@ module.exports = {
           presets: ["@babel/preset-react"],
         },
       },
+      {
+        test: /\.css$/,
+        use: ['css-loader' ]
+    },
     ],
   },
   plugins: [
